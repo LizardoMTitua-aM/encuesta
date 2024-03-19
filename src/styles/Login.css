@@ -1,0 +1,81 @@
+/* Login container */
+body {
+    background: linear-gradient(#0d1522, #0D1522); /* Degradado de arriba hacia abajo */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.msj-login {
+    color: azure;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: dashed;
+}	
+
+.login-container {
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-login,
+.img-login {
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.card-login {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#121929,#1F2C3F);
+    border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+
+}
+
+/* Login form */
+.card-login input {
+    margin: 5px;
+    padding: 5px;
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-login:focus {
+    outline: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.card-login button {
+    padding: 10px 20px;
+    margin: 7px;
+    background-color: #0a2272;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 170px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-login button:hover {
+    background-color: rgb(14, 125, 195);
+}
+
+
+.img-login img {
+    max-width: 400px;
+}
+
+/* Other login styles */
+/* Add your custom styles here */

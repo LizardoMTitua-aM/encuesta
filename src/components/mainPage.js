@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from '../styles/logo192.png'
+import logo from '../images/logo192.png'
 import '../styles/mainPage.css';
 import imgWecome from '../images/welcome.jpeg'
+import Login from './Login';
 
 const MainPage = () => {
     return (
@@ -14,6 +15,7 @@ const MainPage = () => {
                     <button className='login-button'>Login</button>
                     <button className='register-button'>Registro</button>
                 </div>
+
             </div>
             <div className='welcome'>
                 <div className='msj-continer'>
