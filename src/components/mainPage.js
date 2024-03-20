@@ -2,18 +2,21 @@ import React from 'react';
 import logo from '../images/logo192.png'
 import '../styles/mainPage.css';
 import imgWecome from '../images/welcome.jpeg'
-import Login from './Login';
+import appFirebase from '../tokens/credenciales';
+import {getAuth, signOut} from 'firebase/auth';
+const  auth = getAuth(appFirebase);
 
-const MainPage = () => {
+const MainPage = ({mailUser}) => {
     return (
         <div className='main'>
             <div className='header'>
                 <div className='img-container'>
                     <img src={logo} alt='logo' />
                 </div>
-                <div className='button-container'>
-                    <button className='login-button'>Login</button>
-                    <button className='register-button'>Registro</button>
+                <div className='user-container'>
+                    <h1>Bienvenido</h1>
+                    <p>{mailUser}</p>
+                    <button onClick={()=>signOut(auth)}>Cerrar Sesion</button>
                 </div>
 
             </div>
